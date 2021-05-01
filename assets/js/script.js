@@ -67,3 +67,20 @@ function getApi() {
 }
 var fetchButton = document.getElementById("submit");
 fetchButton.addEventListener("click", getApi);
+
+localStorage.setItem("keyName", JSON.stringify(array)); // keyName = probably cities
+var cities = [];
+if (JSON.parse(localStorage.getItem("keyName"))) {
+  cities = JSON.parse(localStorage.getItem("lastCity"));
+}
+// when the user types in a city
+// listen to the submit button
+// when it is hit get the value from the input field and put in a variable
+// check to see if that value exists in the cities array .indexOf(variable) === -1
+// if it doesn't exist then cities.push(thenewcity)
+
+// create a function that would create the history of the cities inputted and call if after the .push and whenever the page is loaded
+// looping over the cities array
+// create the array[i]
+// and creating an element (maybe a button) with the text of the city
+// append it to a div before the next iteration
