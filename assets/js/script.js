@@ -1,4 +1,4 @@
-var cityName = "Denver";
+var cityName = " ";
 function getApi() {
   console.log("hit");
   // fetch request gets a list of all the repos for the node.js organization
@@ -65,7 +65,7 @@ function getApi() {
       }
     });
 }
-var fetchButton = document.getElementById("submit");
+var fetchButton = document.getElementById("search");
 fetchButton.addEventListener("click", getApi);
 
 localStorage.setItem("keyName", JSON.stringify(array)); // keyName = probably cities
@@ -74,7 +74,7 @@ if (JSON.parse(localStorage.getItem("keyName"))) {
   cities = JSON.parse(localStorage.getItem("lastCity"));
 }
 // when the user types in a city
-// listen to the submit button
+// listen to the search button
 // when it is hit get the value from the input field and put in a variable
 // check to see if that value exists in the city's array .indexOf(variable) === -1
 // if it doesn't exist then cities.push(thenewcity)

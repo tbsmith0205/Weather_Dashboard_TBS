@@ -31,8 +31,8 @@ thead {
 .custom-jumbotron,
 .custom-card .card-header,
 .custom-card .card-footer,
-.custom-modal .modal-header,
-.custom-modal .modal-footer {
+.modal-header,
+.modal-footer {
   background-color: var(--darkblue);
   color: var(--light);
 }
