@@ -76,7 +76,7 @@ if (JSON.parse(localStorage.getItem("keyName"))) {
 // when the user types in a city
 // listen to the submit button
 // when it is hit get the value from the input field and put in a variable
-// check to see if that value exists in the cities array .indexOf(variable) === -1
+// check to see if that value exists in the city's array .indexOf(variable) === -1
 // if it doesn't exist then cities.push(thenewcity)
 
 // create a function that would create the history of the cities inputted and call if after the .push and whenever the page is loaded
