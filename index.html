@@ -26,10 +26,6 @@
     <header class="jumbotron jumbotron-fluid custom-jumbotron">
       <div class="container text-center">
         <h1>Weather Dashboard</h1>
-        <h2>
-          Current Time &amp; Date: <br />
-          <span id="time-display">00:00:00</span>
-        </h2>
       </div>
     </header>
 
@@ -37,22 +33,29 @@
       <div class="row">
         <section class="col-12 col-md-4 col-lg-3">
           <div class="card custom-card">
-            <h3 class="card-header">Search for a City:</h3>
             <div class="card-body">
               <div class="card-text">Search for a City:</div>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">City Name</li>
-              <li class="list-group-item">Project Type</li>
-              <li class="list-group-item">Due Date</li>
-              <li class="list-group-item">Hourly Rate</li>
-            </ul>
-            <div class="card-footer">
-              <button class="btn btn-block custom-btn" id="search">
-                Search
+            
+            <form>
+              <input
+                type="text"
+                placeholder="Search.."
+                name="search"
+                />
+              <div class="card-footer">
+              <button
+                class="btn btn-block custom-btn"
+                id="search"
+                type="submit"
+              > Search
+                <i class="fa fa-search"></i>
               </button>
+            </form>
+                </div>
             </div>
-          </div>
+            
+        </div>
+        
         </section>
 
         <section class="col-12 col-md-8 col-lg-9">
