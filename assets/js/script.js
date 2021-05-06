@@ -1,5 +1,5 @@
 var cityName = "";
-var cities = [];
+
 function getApi() {
   console.log("hit");
   // fetch request gets a list of all the repos for the node.js organization
