@@ -1,4 +1,4 @@
-var cityName = " ";
+var cityName = "";
 function getApi() {
   console.log("hit");
   // fetch request gets a list of all the repos for the node.js organization
@@ -68,9 +68,9 @@ function getApi() {
 var fetchButton = document.getElementById("search");
 fetchButton.addEventListener("click", getApi);
 
-localStorage.setItem("keyName", JSON.stringify(array)); // keyName = probably cities
+localStorage.setItem("cities", JSON.stringify(array)); // keyName = probably cities
 var cities = [];
-if (JSON.parse(localStorage.getItem("keyName"))) {
+if (JSON.parse(localStorage.getItem("cities"))) {
   cities = JSON.parse(localStorage.getItem("lastCity"));
 }
 // when the user types in a city
